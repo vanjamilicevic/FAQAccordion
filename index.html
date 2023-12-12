@@ -5,44 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>FAQ accordion</title>
 </head>
 <body>
-
-  FAQs
-
-  What is Frontend Mentor, and how will it help me?
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="backround-image"></div>
+  <main class="main-content">
+  <div class="star-and-title">
+    <img class="star" src="assets/images/icon-star.svg" alt="Star">
+    <h1 class="title">FAQs</h1>
+    
   </div>
+
+
+  <!-- ------------First question------------ -->
+  <div class="question-and-answer first-question-container">
+    <div class="question-and-plus-minus">
+      <p class="question first-question">What is Frontend Mentor, and how will it help me?</p>
+      <!-- <img class="plus first-question-plus" src="assets/images/icon-plus.svg" alt="Plus icon"> -->
+      <div class="svg-container">
+        <svg class="plus first-question-plus" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+        <svg class="minus first-question-minus not-visible" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="answer-container not-visible">
+      <p class="answer first-question-answer">
+        Frontend Mentor offers realistic coding challenges to help developers improve their 
+        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+        all levels and ideal for portfolio building.
+      </p>
+    </div>  
+  </div>
+
+  <!-- ------------Second question------------ -->
+  <div class="question-and-answer second-question-container">
+    <div class="question-and-plus-minus">
+      <p class="question second-question">Is Frontend Mentor free?</p>
+      <div class="svg-container">
+        <svg class="plus second-question-plus" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+        <svg class="minus second-question-minus not-visible" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="answer-container not-visible">
+      <p class="answer second-question-answer">
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
+      </p>
+    </div>
+  </div>
+
+  <!-- ------------Third question------------ -->
+  <div class="question-and-answer third-question-container">
+    <div class="question-and-plus-minus">
+      <p class="question third-question">Can I use Frontend Mentor projects in my portfolio?</p>
+      <div class="svg-container">
+        <svg class="plus third-question-plus" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+        <svg class="minus third-question-minus not-visible" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="answer-container not-visible">
+      <p class="answer third-question-answer">
+        Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+        way to showcase your skills to potential employers!
+      </p>
+    </div>
+    
+  </div>
+
+  <!-- ------------Fourth question------------ -->
+  <div class="question-and-answer fourth-question-container">
+    <div class="question-and-plus-minus">
+      <p class="question fourth-question">How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+      <div class="svg-container">
+        <svg class="plus fourth-question-plus" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+        <svg class="minus fourth-question-minus not-visible" xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+          <path d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="answer-container not-visible">
+      <p class="answer fourth-question-answer">
+        The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+        channel where you can ask questions and seek support from other community members.
+      </p>
+    </div>
+  </div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
